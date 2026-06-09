@@ -52,9 +52,9 @@ router.post("/register", async (req, res) => {
     }
 
 
-    const name = req.body.name.trim()
-    const email = req.body.email.trim().toLowerCase()
-    const password = req.body.password.trim()
+    const name = isInputValid.data.name.trim()
+    const email = isInputValid.data.email.trim().toLowerCase()
+    const password = isInputValid.data.password.trim()
 
     const uniqueUser = await userModel.findOne({email});
     if(uniqueUser){
@@ -108,8 +108,8 @@ router.post('/login', async (req, res)=>{
     }
 
 
-    const email = req.body.email.trim().toLowerCase();
-    const password = req.body.password.trim();
+    const email = isInputValid.data.email.trim().toLowerCase();
+    const password = isInputValid.data.password.trim();
 
     const userExist = await userModel.findOne({email})
     if(!userExist){
