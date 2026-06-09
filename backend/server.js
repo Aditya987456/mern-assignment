@@ -1,14 +1,14 @@
 import express, { json } from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import dotenv from "dotenv"
-dotenv.config()
-import { ConnectDB } from "./db";
-import authRoutes from "./routes/authRoute"
-import taskRoutes from "./routes/taskRoute"
+// import dotenv from "dotenv"
+// dotenv.config()
+import { ConnectDB } from "./db.js";
+import authRoutes from "./routes/authRoute.js"
+import taskRoutes from "./routes/taskRoute.js"
+import { port } from "./config.js";
 
 
-const port = process.env.PORT || 3000;
 const app = express();
 app.use(cors())
 app.use(express.json())

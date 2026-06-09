@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { mongoUrl } from "./config";
+import { mongoUrl } from "./config.js";
 
 
 

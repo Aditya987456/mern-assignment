@@ -1,38 +1,47 @@
-import express from express
+
+import express from "express"
 const router = express.Router();
-import { taskModel } from "../models/task";
+import { taskModel } from "../models/task.js";
+import { authMiddleware } from "../middleware/authMiddleware.js";
 
 
 
 //CRUD operations---
 
-//1. Create
-router.post('/create', (req, res)=>{
 
-} )
+// //1. Create
+// router.post('/create', authMiddleware, (req, res)=>{
 
-
-
-//2. Read
-router.get('/get', (req, res)=>{
-
-})
+// } )
 
 
 
+// //2. Read
+// router.get('/get', authMiddleware, (req, res)=>{
 
-//3. Update
-router.update('/update', (req, res)=>{
-
-})
+// })
 
 
 
 
-//4. Delete
-router.delete('delete', (req, res)=>{
+// //3. Update
+// router.put('/update', authMiddleware, (req, res)=>{
 
-})
+// })
+
+
+
+// //also update of specific things-
+// router.patch('/patch/')
+
+
+
+
+
+// //4. Delete
+// router.delete('delete', authMiddleware, (req, res)=>{
+
+// })
 
 
 
