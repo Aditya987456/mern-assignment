@@ -1,1 +1,1 @@
-export const backendUrl='http://localhost:5000'
+export const backendUrl="https://mern-assignment-9ivp.onrender.com"
