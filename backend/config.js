@@ -2,5 +2,5 @@ import dotenv from "dotenv"
 dotenv.config();
 
 export const mongoUrl=process.env.MONGODB_URL
-export const port=process.env.PORT
+export const port=process.env.PORT  || 5000
 export const jwtSecret=process.env.JWT_SECRET
