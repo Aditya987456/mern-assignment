@@ -134,7 +134,8 @@ router.post('/login', async (req, res)=>{
 
      res.status(200).json({
       message:"user logged-In successfully",
-      token:token
+      token:token,
+      name:userExist.name
      })
 
 
