@@ -281,6 +281,6 @@ Aditya Raj
 
 Email: [adityarajxdev@gmail.com](mailto:adityarajxdev@gmail.com)
 
-GitHub: [Your GitHub Profile]
+GitHub: [https://github.com/Aditya987456/]
 
-LinkedIn: [Your LinkedIn Profile]
+LinkedIn: [https://www.linkedin.com/in/adityaraj2981/]
